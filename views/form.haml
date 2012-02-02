@@ -1,0 +1,18 @@
+%html
+  %head
+    %title Change your LDAP Password
+  %body
+    %h2 Enter your LDAP information to change your password
+  %form{ :action => "", :method=> "post"}
+    %fieldset
+      %ol
+        %li
+          %label{:for => "username"} UserName:
+          %input{:type => "text", :name => "username", :class => "text"}
+        %li
+          %label{:for => "currentPassword"} Current Password:
+          %input{:type => "text", :name => "currentPassword", :class => "text"}
+        %li
+          %label{:for => "newPassword"} New Password:
+          %input{:type => "text", :name => "newPassword", :class => "text"}
+        %input{:type => "submit", :value => "Send", :class => "button"}
